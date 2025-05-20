@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Website</title>
+  <!-- Bootswatch Flatly Theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/flatly/bootstrap.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- 自定義圖片樣式 -->
+  <style>
+    .uniform-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MySite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="container-fluid p-0">
+    <div class="position-relative">
+      <img src="img/hero.jpg" class="w-100" style="height: 400px; object-fit: cover;" alt="Hero Image">
+      <div class="text-center py-4">
+        <h1 class="mt-4">Welcome to My Airspace</h1>
+        <p class="lead">Explore aerial dominance through a modern lens.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Three Column Layout -->
+  <div class="container py-5">
+    <div class="row text-center">
+      <!-- Tornado -->
+      <div class="col-md-4">
+        <img src="img/a.jpg" class="img-fluid rounded mb-3 uniform-img" alt="Tornado">
+        <h3>Panavia Tornado</h3>
+        <p>
+          Developed by the UK, Germany, and Italy, the Tornado served as a multipurpose strike aircraft across NATO.
+        </p>
+        <p><em>“In every storm, the Tornado finds its mark.”</em></p>
+      </div>
+
+      <!-- Jaguar -->
+      <div class="col-md-4">
+        <img src="img/b.jpg" class="img-fluid rounded mb-3 uniform-img" alt="Jaguar">
+        <h3>SEPECAT Jaguar</h3>
+        <p>
+          A Franco-British design that excelled in ground attack and reconnaissance, the Jaguar was built for battlefield survivability.
+        </p>
+        <p><em>“Silent, fast, and low—the hunter of steel and sand.”</em></p>
+      </div>
+
+      <!-- Typhoon -->
+      <div class="col-md-4">
+        <img src="img/c.jpg" class="img-fluid rounded mb-3 uniform-img" alt="Typhoon">
+        <h3>Eurofighter Typhoon</h3>
+        <p>
+          A symbol of European airpower collaboration, the Typhoon blends agility, speed, and multirole precision in one platform.
+        </p>
+        <p><em>“Mastery of the skies, born from unity.”</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center p-4">
+    <p>Follow us on:</p>
+    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+    <p class="mt-3 mb-0">&copy; 2025 MySite</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
